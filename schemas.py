@@ -22,8 +22,6 @@ class Token(BaseModel):
     token_type: str
 
 
-# ---------- Transactions ----------
-
 class TransactionCreate(BaseModel):
     title: str
     amount: float = Field(gt=0)
